@@ -1,0 +1,10 @@
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\bin\Debug\netcoreapp1.1\ConsoleApp5.deps.json
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\bin\Debug\netcoreapp1.1\ConsoleApp5.runtimeconfig.json
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\bin\Debug\netcoreapp1.1\ConsoleApp5.runtimeconfig.dev.json
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\bin\Debug\netcoreapp1.1\ConsoleApp5.dll
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\bin\Debug\netcoreapp1.1\ConsoleApp5.pdb
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\obj\Debug\netcoreapp1.1\ConsoleApp5.csproj.CoreCompileInputs.cache
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\obj\Debug\netcoreapp1.1\ConsoleApp5.AssemblyInfo.cs
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\obj\Debug\netcoreapp1.1\ConsoleApp5.dll
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\obj\Debug\netcoreapp1.1\ConsoleApp5.pdb
+C:\Users\jonas\Desktop\easv\3. semester\FirstCoreSulotion\ConsoleApp5\obj\Debug\netcoreapp1.1\ConsoleApp5.csprojResolveAssemblyReference.cache
