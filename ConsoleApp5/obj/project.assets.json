@@ -7045,11 +7045,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonas\\Desktop\\easv\\3. semester\\FirstCoreSulotion\\ConsoleApp5\\ConsoleApp5-Small_menu.csproj",
-      "projectName": "ConsoleApp5-Small_menu",
-      "projectPath": "C:\\Users\\jonas\\Desktop\\easv\\3. semester\\FirstCoreSulotion\\ConsoleApp5\\ConsoleApp5-Small_menu.csproj",
+      "projectUniqueName": "C:\\Users\\jonas\\Documents\\GitHub\\MovieMenuByJonas\\ConsoleApp5\\ConsoleApp5.csproj",
+      "projectName": "ConsoleApp5",
+      "projectPath": "C:\\Users\\jonas\\Documents\\GitHub\\MovieMenuByJonas\\ConsoleApp5\\ConsoleApp5.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonas\\Desktop\\easv\\3. semester\\FirstCoreSulotion\\ConsoleApp5\\obj\\",
+      "outputPath": "C:\\Users\\jonas\\Documents\\GitHub\\MovieMenuByJonas\\ConsoleApp5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",

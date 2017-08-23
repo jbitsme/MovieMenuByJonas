@@ -31,19 +31,20 @@ namespace ConsoleApp5
                 length = "142 Min"
             });
 
-        
-        string[] menuItems =
-            {
+
+            string[] menuItems =
+                {
                 "List All Movies",
                 "Add Movie",
                 "Delete Movie",
                 "Edit Movie",
+                "Search",
                 "Exit"
             };
 
             var selection = showMenu(menuItems);
 
-            while(selection != 5)
+            while(selection != 6)
             {
                 switch (selection)
                 {
@@ -63,8 +64,11 @@ namespace ConsoleApp5
                         EditMovie();
                         break;
 
+                    case 5:
+                        SearchMovie();
+                        break;
+
                     default:
-                        
                         break;
                 }
                 selection = showMenu(menuItems);
@@ -76,7 +80,8 @@ namespace ConsoleApp5
 
         private static Movie FindingMovieById()
         {
-            Console.WriteLine("Insert The Id Of The Movie You Want To Delete: ");
+
+            listMovies();
             int id;
             while (!int.TryParse(Console.ReadLine(), out id))
             {
@@ -95,9 +100,10 @@ namespace ConsoleApp5
 
         private static void EditMovie()
         {
-            listMovies();
+            Console.WriteLine("Please Select The Id Of The Movie You Want To Edit: \n");
             var movie = FindingMovieById();
-            
+            Console.ReadLine();
+
             Console.WriteLine();
             Console.WriteLine("Title: ");
             movie.title = Console.ReadLine();
@@ -114,6 +120,7 @@ namespace ConsoleApp5
 
         private static void DeleteMovie()
         {
+            Console.WriteLine("Insert The Id Of The Movie You Want To Delete: ");
             var movieFound = FindingMovieById();
 
             if(movieFound != null)
@@ -148,12 +155,13 @@ namespace ConsoleApp5
 
         private static void listMovies()
         {
-            Console.WriteLine("\nList Of Movies");
+            Console.WriteLine("\nList Of Movies \n");
             foreach (var Movie in movies)
             {
                 Console.WriteLine($"Id: {Movie.Id} Name: {Movie.title} Auther: {Movie.auther} Genre: {Movie.genre} Length: {Movie.length}");
+                Console.WriteLine("");
             }
-            Console.WriteLine("\n");
+            Console.WriteLine("");
         }
 
         private static int showMenu(string[] menuItems)
@@ -168,23 +176,28 @@ namespace ConsoleApp5
             int selection;
             while(!int.TryParse(Console.ReadLine(), out selection)
                 || selection < 1
-                || selection > 5)
+                || selection > 6)
             {
-                Console.WriteLine("You need to choose a number between 1-5");
+                Console.WriteLine("You need to choose a number between 1-6");
             }
 
             
             return selection;
         }
-        //private static void makeListMovies()
-        //{
-        //    Console.WriteLine("\nList Of Movies");
-        //    foreach (var Movie in movies)
-        //    {
-        //        Console.WriteLine($"Id: {Movie.Id} Name: {Movie.title} Auther: {Movie.auther} Genre: {Movie.genre} Length: {Movie.length}");
-        //    }
-        //    Console.WriteLine("\n");
-        //}
+        private static void SearchMovie()
+        {
+            Console.WriteLine("Enter video name: \n");
+            var searchQuery = Console.ReadLine();
+            Console.WriteLine("");
+
+            foreach (Movie Movie in movies)
+            {
+                if (Movie.title.ToLower().Contains(searchQuery.ToLower()))
+                {
+                    Console.WriteLine(($"Id: {Movie.Id} Name: {Movie.title} Auther: {Movie.auther} Genre: {Movie.genre} Length: {Movie.length}\n"));
+                }
+            }
+        }
 
     }
 }
